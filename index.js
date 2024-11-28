@@ -1,7 +1,21 @@
 import express from "express";
+import dotenv from "dotenv";
+import bodyParser from "body-parser";
+import cors from "cors";
 
+import testRoute from "./routes/testRoute.js";
+
+dotenv.config();
 const app = express();
+app.use(express.json());
+app.use(bodyParser.json({ limit: "30mb", extended: true }));
+app.use(bodyParser.urlencoded({ limit: "30mb", extended: true }));
+app.use(cors());
 
-app.listen(3500, () => {
+const port = process.env.PORT || 3500;
+
+app.listen(port, () => {
   console.log("listening");
 });
+
+app.use("/server", testRoute);
