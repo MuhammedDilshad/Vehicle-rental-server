@@ -3,9 +3,10 @@
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
-  "type": "module",
   "scripts": {
-    "seed": "node seed.js",
+    "remove": "npx sequelize-cli db:migrate:undo",
+    "make-model": "npx sequelize-cli model:generate --name Vehicle --attributes wheelType:integer,category:string,model:string",
+    "migrate": "npx sequelize-cli db:migrate",
     "start": "nodemon index.js"
   },
   "repository": {

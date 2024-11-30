@@ -1,4 +1,4 @@
-export const testController = (req, res) => {
+const testController = (req, res) => {
   console.log(req.body, "rcved Data");
 
   res.status(200).json({
@@ -6,3 +6,5 @@ export const testController = (req, res) => {
     data: req.body,
   });
 };
+
+module.exports = { testController };

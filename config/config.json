@@ -1,0 +1,23 @@
+{
+  "development": {
+    "username": "muhammeddilshad",
+    "password": "suvaidap",
+    "database": "sqltech",
+    "host": "localhost",
+    "dialect": "postgres"
+  },
+  "test": {
+    "username": "muhammeddilshad",
+    "password": "suvaidap",
+    "database": "sqltech",
+    "host": "localhost",
+    "dialect": "postgres"
+  },
+  "production": {
+    "username": "muhammeddilshad",
+    "password": "suvaidap",
+    "database": "sqltech",
+    "host": "localhost",
+    "dialect": "postgres"
+  }
+}

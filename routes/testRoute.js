@@ -1,8 +1,8 @@
-import express from "express";
-import { testController } from "../controllers/testController.js";
+const express = require("express");
+const { testController } = require("../controllers/testController.js"); // Adjusted for CommonJS
 
 const route = express.Router();
 
 route.post("/test", testController);
 
-export default route;
+module.exports = route;
