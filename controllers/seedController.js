@@ -2,9 +2,7 @@ const { Vehicle } = require("../models");
 
 const VehicleTypes = async (req, res) => {
   try {
-    console.log(123);
     const vehicles = await Vehicle.findAll();
-    console.log(12345, vehicles, "vehicles");
 
     res.status(200).json(vehicles);
   } catch (error) {

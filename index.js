@@ -5,7 +5,7 @@ const cors = require("cors");
 const sequelize = require("./configg.js");
 
 // Import routes
-const testRoute = require("./routes/testRoute.js");
+const formRoute = require("./routes/formRoute.js");
 const vehicleRoutes = require("./routes/vehicleRoute.js");
 
 dotenv.config();
@@ -34,5 +34,5 @@ sequelize
   });
 
 //routes
-app.use("/server", testRoute);
+app.use("/server", formRoute);
 app.use("/server", vehicleRoutes);
