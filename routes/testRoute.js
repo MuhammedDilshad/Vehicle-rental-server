@@ -1,5 +1,5 @@
 const express = require("express");
-const { testController } = require("../controllers/testController.js"); // Adjusted for CommonJS
+const { testController } = require("../controllers/testController.js");
 
 const route = express.Router();
 
